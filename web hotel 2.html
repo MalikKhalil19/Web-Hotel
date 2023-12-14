@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Blue Doorz</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Add any additional meta tags or linked stylesheets here -->
+</head>
+<style>
+        nav {
+            text-align: center;
+        }
+
+        nav a {
+            display: inline-block;
+            margin: 0 15px; /* Adjust the margin as needed */
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        /* Center the text within the navigation links */
+        nav a span {
+            display: block;
+        }
+
+        /* Style for the order button */
+        .order-button {
+            display: block;
+            margin-top: 10px; /* Adjust the margin as needed */
+            padding: 8px 15px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Hotel Blue Doorz</h1>
+        <div id="search-container">
+            <input type="text" id="search-box" placeholder="Cari...">
+            <button id="search-button">Search</button>
+        </div>
+    </header>
+    <nav>
+        <a href="#rooms"><span>Room</span></a>
+        <a href="Facility.html"><span>Facility</span></a>
+        <a href="#contact"><span>Contact</span></a>
+    </nav>
+<section class="room-section">
+    <div class="container">
+        <h2 style="font-family: 'Comic Sans MS', cursive;"><a href="pesan hotel 1.html">Hight Class Room</a></h2>
+        <div class="hotel-image">
+            <a href="pesan hotel 1.html">
+                <img src="Img/Hotel Mewwah.jpg" alt="Kamar Mewah">
+                <button class="order-button" onclick="window.location.href='order_page1.html'">Order Now</button>
+            </a>
+        </div>
+        <div class="hotel-info">
+            <h3>Luxury Room</h3>
+            <p>Kamar mewah dengan pemandangan indah.</p>
+            <p>Harga mulai dari Rp.2.000.000 per malam.</p>
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+</section>
+
+    <section class="room-section">
+        <div class="container">
+            <h2><a href="bisnis room.html">Bisnis Class Room</a></h2>
+            <div class="hotel-image">
+                <a href="bisnis room.html">
+                    <img src="Img/hotel biru.jpeg" alt="Bisnis">
+                    <button class="order-button" onclick="window.location.href='order_page2.html'">Order Now</button>
+                </a>
+            </div>
+            <div class="hotel-info">
+                <h3>Bisnis Room</h3>
+                <p>Kamar mewah dengan Fasilitas lengkap.</p>
+                <p>Harga mulai dari Rp.1.000.000 per malam.</p>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+    </section>
+    <section class="room-section">
+        <div class="container">
+            <h2><a href="medium room.html">Medium Class Room</a></h2>
+            <div class="hotel-image">
+                <a href="medium room.html">
+                    <img src="Img/Hotel mewah.jpg" alt="Kamar Mewah">
+                    <button class="order-button" onclick="window.location.href='order_page3.html'">Order Now</button>
+                </a>
+            </div>
+            <div class="hotel-info">
+                <h3>Medium Room</h3>
+                <p>Kamar Normal dengan harga terjangkau.</p>
+                <p>Harga mulai dari Rp.300.000 per malam.</p>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+    </section>
+    <!-- Bagian Kontak -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Jika Anda memiliki pertanyaan atau membutuhkan bantuan, silakan hubungi kami:</p>
+            <ul>
+                <li>Email: info@hotelbluedoorz.com</li>
+                <li>Telepon: +62 523 476 749</li>
+                <li>Alamat: Jl. Victor No. 25, Kota Bandung</li>
+            </ul>
+        </div>
+    </section>
+    <!-- Sisipkan bagian-bagian lainnya di sini -->
+    <footer>
+        &copy; 2023 Hotel Blue Doorz
+    </footer>
+</body>
+
+</html>

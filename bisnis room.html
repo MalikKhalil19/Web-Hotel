@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bisnis Class Room - Hotel BLUE Doorz</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        /* Your existing styles remain unchanged */
+
+        /* Additional styles for the reservation form */
+        .reservation-form {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .reservation-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .reservation-form input,
+        .reservation-form select {
+            width: calc(100% - 16px);
+            padding: 8px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        .reservation-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Your existing HTML content remains unchanged -->
+
+    <!-- Bagian Kamar Bisnis Class -->
+    <section class="room-section">
+        <div class="container">
+            <h2>Bisnis Class Room</h2>
+            <div class="hotel-image">
+                <a href="bisnis_class.html"><img src="Img/hotel biru.jpeg" alt="Bisnis" width="300" height="200"></a>
+            </div>
+            <div class="hotel-info">
+                <h3>Bisnis Room</h3>
+                <p>Kamar bisnis dengan fasilitas lengkap untuk keperluan acara keluarga. Bisa ditempati lebih dari 3 orang dengan fasilitas yang sangat bagus dan nyaman.</p>
+                <p>Harga mulai dari Rp.1.000.000 per malam.</p>
+
+                <!-- Formulir Pemesanan -->
+                <div class="reservation-form">
+                    <h4>Pesan Sekarang</h4>
+                    <form action="process_order.php" method="post">
+                        <label for="name">Nama:</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="phone">Nomor Telepon:</label>
+                        <input type="tel" id="phone" name="phone" required>
+
+                        <label for="check-in">Tanggal Check-In:</label>
+                        <input type="date" id="check-in" name="check-in" required>
+
+                        <label for="check-out">Tanggal Check-Out:</label>
+                        <input type="date" id="check-out" name="check-out" required>
+
+                        <label for="payment-method">Metode Pembayaran:</label>
+                        <select id="payment-method" name="payment-method">
+                            <option value="credit-card">Kartu Kredit</option>
+                            <option value="bank-transfer">Transfer Bank</option>
+                            <!-- Add more options as needed -->
+                        </select>
+
+                        <!-- Updated Pesan (Order) button -->
+                        <button type="button" onclick="pesanKamar()">Pesan Sekarang</button>
+                    </form>
+                </div>
+                <!-- Akhir Formulir Pemesanan -->
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+    </section>
+
+    <!-- Include other sections or content related to the Bisnis Class Room as needed -->
+
+    <footer>
+        &copy; 2023 Hotel Blue Doorz
+    </footer>
+
+    <script>
+        function pesanKamar() {
+            var selectedDurasi = document.getElementById("daily-option").value;
+            alert("Anda telah memesan kamar untuk " + selectedDurasi + " hari. Terima kasih!");
+        }
+    </script>
+</body>
+
+</html>
